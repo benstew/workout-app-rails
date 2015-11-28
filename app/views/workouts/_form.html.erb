@@ -1,0 +1,16 @@
+<%= form_for(@workout) do |f| %>
+
+  <%= f.label :date%>
+  <%= f.datetime_select :date%><br>
+
+  <%= f.label :workout%>
+  <%= f.text_field :workout%><br>
+
+  <%= f.label :mood%>
+  <%= f.text_field :mood%><br>
+
+  <%= f.label :length%>
+  <%= f.text_field :length%><br>
+
+  <%= f.submit %>
+<% end %>
